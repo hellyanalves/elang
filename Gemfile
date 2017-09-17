@@ -48,3 +48,6 @@ group :development do
 end
 
 gem 'haml'
+
+#postgressql gem
+gem 'pg'
