@@ -12,6 +12,7 @@ default: &default
   password: <%= ENV['PASSWORD'] %>
   host:     <%= ENV['IP'] %>
   timeout: 5000
+  template: template0
 
 development:
   <<: *default
