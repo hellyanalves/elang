@@ -7,110 +7,61 @@
         
         <!-- Latest compiled and minified JavaScript -->
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <title>Elang</title>
-    </head>
-    
-    <body>
-    <div class="row">    
-        <div class="col-md-12" style="background-color: coral; color: white">
-            <h1>Elang</h1>
-        </div>
-    </div>    
-    <div class="row">
-        <div class="col-xs-4" >
-
-        </div>
-        <div class="col-xs-8">
-        Bem-vindo ao Elang! Comece selecionando o país para definir a língua que você está aprendendo.
-        <div class="col-xs-8">
-        Depois, selecione a atividade para começar a interação da melhor forma!
-        
         <style>
-        .flagbrasil{
+        .flag{
             width: auto;
             text-align: center; 
-            background: url('images/flagbrasil.png');
             padding-left: 110px;
             padding-top: 65px;
             background-repeat: no;
+            border: none;
         }
         
-        .flagestadosunidos{
-            width: auto;
-            text-align: center; 
-            background: url('images/flagestadosunidos.png');
-            padding-left: 110px;
-            padding-top: 65px;
-            background-repeat: no;
-        }
-        
-        .flagitalia{
-            width: auto;
-            text-align: center; 
-            background: url('images/flagitalia.png');
-            padding-left: 110px;
-            padding-top: 65px;
-            background-repeat: no;
-        }
-        
-        .flagalemanha{
-            width: auto;
-            text-align: center; 
-            background: url('images/flagalemanha.png');
-            padding-left: 110px;
-            padding-top: 65px;
-            background-repeat: no;
-        }
-        
-        .flagfranca{
-            width: auto;
-            text-align: center; 
-            background: url('images/flagfranca.png');
-            padding-left: 110px;
-            padding-top: 65px;
-            background-repeat: no;
-        }
-        
-        .ativjogodavelha{
+        .ativ{
             width: auto;
             text-align: center; 
             background: url('images/ativjogodavelha.png');
             padding-left: 90px;
             padding-top: 90px;
             background-repeat: no;
+            border: none;
         }
-        
-        .ativjogoforca{
-            width: auto;
-            text-align: center; 
-            background: url('images/ativjogoforca.png');
-            padding-left: 90px;
-            padding-top: 90px;
-            background-repeat: no;
-        }
-        
-        .ativtemas{
-            width: auto;
-            text-align: center; 
-            background: url('images/ativtemas.png');
-            padding-left: 90px;
-            padding-top: 90px;
-            background-repeat: no;
-        }
-
+        .top-buffer { margin-top:20px; }
+        .center-vertical { vertical-align:middle;}
         </style>
         
         
-        <div class="container">
-          <h2>Selecionar o país</h2>
-        
-            <div class="row">
-            <button class="flagbrasil"></button>
-            <button class="flagestadosunidos"></button>
-            <button class="flagitalia"></button>
-            <button class="flagalemanha"></button>
-            <button class="flagfranca"></button>
-            <div class="row">
+        <title>Elang</title>
+    </head>
+    
+    <body>
+    <div class="container">
+        <div class="row top-buffer center-vertical"  style="background-color: coral; color: white;">    
+            <div class="col-md-4">
+                <h1>Elang</h1>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <button class="btn btn-secondary btn-lg" style="background-color: white; color: coral; vertical-align: middle; margin-top:2%;">Cadastrar</button>
+                <button class="btn btn-secondary btn-lg" style="background-color: white; color: coral; vertical-align: middle; margin-top:2%;">Login</button>
+            </div>
+        </div>    
+        <div class="row top-buffer">
+            <div class="col-xs-8 offset-col-xs-4">
+                Bem-vindo ao Elang! Comece selecionando o país para definir a língua que você está aprendendo.
+            </div>
+            <div class="col-xs-8 offset-col-xs-4">
+                Depois, selecione a atividade para começar a interação da melhor forma!
+            </div>
+        </div>
+        <div class="row top-buffer">
+          <h2>Selecionar o país</h2>  
+        </div>
+        <div class="row">
+            <button class="flag" style="background-image: url('images/flagbrasil.png')"></button>
+            <button class="flag" style="background: url('images/flagestadosunidos.png')"></button>
+            <button class="flag" style="background: url('images/flagitalia.png')"></button>
+            <button class="flag" style="background: url('images/flagalemanha.png')"></button>
+            <button class="flag" style="background: url('images/flagfranca.png')"></button>
         </div>
         
 <!--    Modelo para incluir imagens
@@ -125,21 +76,21 @@
             
 
         <div class="row">
-          <div class="container">
           <h2>Selecionar a atividade</h2>
         
             <div class="row">
-            <button class="ativjogodavelha"></button>
-            <button class="ativjogoforca"></button>
-            <button class="ativtemas"></button>
-            <div class="row">
-        </div>
+                <button class="ativ" style="background-image: url('images/ativjogodavelha.png')"></button>
+                <button class="ativ" style="background-image: url('images/ativjogoforca.png')"></button>
+                <button class="ativ" style="background-image: url('images/ativtemas.png')"></button>
+            </div>
 
-        
-        
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-5">
+                    <button class="btn btn-secondary btn-lg" style="background-color: coral; color: white;">Começar</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-        
-    </div>
+
     </body>
 </html>
