@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :idioms
+  resources :idios
+  resources :idioms
+  resources :countries
+  resources :countries
   root 'index#index'
   
   
