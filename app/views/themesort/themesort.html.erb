@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% arr = [
+"Hobbies & Interests",
+"Schooling (course / academic training)",
+"Profession (retired or not)",
+"Important experience(s) in your life",
+"Funny experience(s) in your life",
+"Preference for songs (style, band...), a specific song and reason for choosing this song",
+"Preference for soap operas and reason",
+"Preference for movies (comedy, horror, suspense...), a specific movie and reason for choosing this movie",
+"Opinion on current youth x youth 50 years ago",
+"Opinion on current crime x crime 50 years ago",
+"Opinion about parents and children today x 50 years ago",
+"Opinion on technology today and 50 years ago (facilities)",
+"What is expected of young people today 50 years from now?",
+"City or field preference and reason",
+"Animal preference and reason",
+"Food preference and reason",
+"An important person in your life",
+"Best trips in your life and reason",
+"Best events in your life and reason (weddings, graduation, anniversaries, birthdays...)"
+    ] %>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Elang</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/creative.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+          <div class="container">
+            <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Elang</a>-->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#services" onclick="window.location.href = 'login/login'">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#portfolio">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header class="masthead">
+          <div class="header-content">
+            <div class="header-content-inner" style="background-color: white;">
+              <h1>Theme Sorted: <%= arr.at(rand(0..18)) %></h1>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Resort</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="javascript:history.back()">Back</a>
+            </div>
+          
+          </div>
+        </header>
+    </body>
+</html>
