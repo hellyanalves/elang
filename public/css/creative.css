@@ -14,7 +14,9 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40; }
+  border-color: #F05F40; 
+  font-weight: bold;
+}
 
 hr.light {
   border-color: white; }
@@ -25,7 +27,9 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #f05f40; }
+    color: #f05f40; 
+  font-weight: bold;
+  }
 
 h1,
 h2,
@@ -33,12 +37,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
-
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
+  font-weight: bold;
+}
+h7 {
+  color: #f05f40;
+  font-size: 20px;
+  font-weight: bold;
+}
 p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 20px; }
+  margin-bottom: 20px; 
+  font-weight: bold;}
 
 .bg-primary {
   background-color: #F05F40 !important; }
