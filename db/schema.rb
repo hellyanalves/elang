@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170919203348) do
+ActiveRecord::Schema.define(version: 20170928004106) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,5 +32,18 @@ ActiveRecord::Schema.define(version: 20170919203348) do
 
   add_index "idioms", ["country_id"], name: "index_idioms_on_country_id", using: :btree
 
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
+    t.integer  "country_id"
+    t.string   "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "users", ["country_id"], name: "index_users_on_country_id", using: :btree
+
   add_foreign_key "idioms", "countries"
+  add_foreign_key "users", "countries"
 end

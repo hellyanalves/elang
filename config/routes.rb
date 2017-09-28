@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :users
+  resources :users
+  resources :users
+  resources :users
+  resources :users
+  resources :users
+  resources :users
+  resources :users
   resources :idioms
   resources :idios
   resources :idioms
