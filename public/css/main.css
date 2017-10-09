@@ -1,0 +1,22 @@
+#user-profile{
+    background-color: #f05f44;
+    color: white;
+    padding: 50px;
+}
+#conversation-options{
+    background-color: #bbb;
+    color: #444;
+    padding: 50px;
+}
+#conversation-content-video{
+    background-color: #555;
+    padding-top:30%;
+    padding-bottom:30%;
+    padding-left:5%;
+}
+#conversation-content-activity{
+    background-color: #fff;
+    padding-top:15%;
+    padding-bottom:15%;
+    padding-left:5%;
+}

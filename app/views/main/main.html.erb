@@ -13,24 +13,27 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/creative.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
-<body>
-    <%= render 'header-footer/header' %>  
-    <section id="login">
-        <div class="container">
-        	<div class="row">
-        	    <div class="col-md-12">
-            	    <div class="form-wrap">
-                    <h1>Call to start a video conversation.</h1>
-            	    </div>
-        		</div> <!-- /.col-xs-12 -->
-        	</div> <!-- /.row -->
-        </div> <!-- /.container -->
-        
-    
-        <div class="container">
-            <img class="img-fluid" src="images/video.png">
-        </div> <!-- /.container -->
-    </section>
-
+<body id="body-nav">
+    <%= render 'header-footer/header'%>  
+</body>
+<body id="body-content">
+    <div class="modal-body row">
+        <div class="col-md-3" id="user-profile">
+            <div class="row">User profile</div>
+            <div class="row">Contacts</div>
+        </div>
+        <div class="col-md-6"id="conversation-content">
+            <div class="row" id="conversation-content-video">
+                Video
+            </div>
+            <div class="row" id="conversation-content-activity">
+                Activity
+            </div>
+        </div>
+        <div class="col-md-3" id="conversation-options">
+            Other Activities
+        </div>
+    </div> 
 </body>
