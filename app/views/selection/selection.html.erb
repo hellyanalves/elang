@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
     <meta charset="utf-8">
@@ -11,18 +10,18 @@
     <title>Elang</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/creative.css" rel="stylesheet">
+    <link href="/css/creative.css" rel="stylesheet">
 
   </head>
 
@@ -31,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Elang</a>
+        <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Elang</a>-->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,10 +40,10 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services" onclick="window.location.href = 'login/login'">Sign In</a>
+              <a class="nav-link js-scroll-trigger" href="/login/login">Sign In</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Sign Up</a>
+              <a class="nav-link js-scroll-trigger" href="/users/new">Sign Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -59,7 +58,8 @@
         <div class="header-content-inner">
           <h1 id="homeHeading">Welcome to Elang</h1>
           <hr>
-          <p>Practice a language and share experiences.</p>
+          <p> Practice a language and share experiences.
+          </p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -69,29 +69,37 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
+            <p class="primary">
+            </p>
             <h2 class="section-heading text-white">Here you can connect entertainment to language!</h2>
             <hr class="light">
             <p class="text-faded">  Our purpose is to connect people who have a lot to teach to those who want to learn.
-                                    There are many people who speak the language you are studying. 
-                                    You can start a conversation with one of them now!
-                                     
+                                      There are many people who speak the language you are studying. 
+                                      You can start a conversation with one of them now!
+                                       
             </p>
-            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services" onclick="window.location.href = 'login/login'">Get Started!</a>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services" onclick="window.location.href = 'main/main'">Get Started!</a>
+            <p class="primary">
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">After sign up/sign in, start by selecting the Country where you want your connection be! 
+                                        Then, select the activity you want to do first with your connection to break the ice!</h2>
             <hr class="primary">
+            <p class="section-heading">If you are not logged in, you will be taken to the sign up/sign in page.</p>
+            <p class="primary">
           </div>
         </div>
       </div>
+      </section>
+<!--
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
@@ -125,7 +133,11 @@
         </div>
       </div>
     </section>
+-->
 
+  <div class="container">
+    <h7>Select the Country:</h7>
+    <p class="primary">
     <section class="p-0" id="portfolio">
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
@@ -135,10 +147,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Brazil
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Language: Portuguese
                   </div>
                 </div>
               </div>
@@ -150,10 +162,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    United States of America
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Language: English
                   </div>
                 </div>
               </div>
@@ -165,25 +177,37 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    France
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Language: French
                   </div>
                 </div>
               </div>
             </a>
           </div>
+        </div>  
+      </div>    
+    </section> 
+    <p class="primary">
+    <p class="primary">
+    
+    <h7>Select the activity:</h7>
+    <p class="primary">
+    
+    <section class="p-0" id="portfolio">    
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/4.png">
               <img class="img-fluid" src="img/portfolio/thumbnails/4.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Tic-Tac-Toe
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Draw a row with your symbol!
                   </div>
                 </div>
               </div>
@@ -195,25 +219,25 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Hangman Game
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Guess the word!
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.png">
+            <a class="portfolio-box" href="/themesort/themesort">
               <img class="img-fluid" src="img/portfolio/thumbnails/6.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Random Themes
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Discuss about a random theme!
                   </div>
                 </div>
               </div>
@@ -222,7 +246,8 @@
         </div>
       </div>
     </section>
-
+  </div>
+<!--
     <div class="call-to-action bg-dark">
       <div class="container text-center">
         <h2>Free Download at Start Bootstrap!</h2>
@@ -253,7 +278,7 @@
         </div>
       </div>
     </section>
-    
+-->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
