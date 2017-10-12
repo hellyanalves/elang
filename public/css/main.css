@@ -9,9 +9,10 @@
     padding: 50px;
 }
 #conversation-content-video{
-    background-color: #555;
     padding-top:30%;
     padding-bottom:30%;
+    background-image: url("../images/skype-logo.png");
+    background-size: contain;
     padding-left:5%;
 }
 #conversation-content-activity{
@@ -19,4 +20,19 @@
     padding-top:15%;
     padding-bottom:15%;
     padding-left:5%;
+}
+.references{
+    font-size: 10px;
+}
+.references a{
+    color: white !important;
+}
+.user-icon{
+    background-color: white;
+    background-image: url("../images/userpic_elderly.png");
+    padding: 30px;
+    background-size: contain;
+}
+.user-profile{
+    color: white;
 }
