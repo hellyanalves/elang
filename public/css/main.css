@@ -36,3 +36,8 @@
 .user-profile{
     color: white;
 }
+
+#otheractivities a{
+    color: #444;
+    margin: 0;
+}

@@ -1,16 +1,7 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :users
-  resources :users
-  resources :users
-  resources :users
-  resources :users
-  resources :users
+  devise_for :users
   resources :users
   resources :idioms
-  resources :idios
-  resources :idioms
-  resources :countries
   resources :countries
   root 'index#index'
   
@@ -20,6 +11,9 @@ Rails.application.routes.draw do
   get 'selection/selection'
   get 'themesort/themesort'
   get 'main/main'
+  
+  post '/login/auth' => 'login#auth'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -51,3 +51,5 @@ gem 'haml'
 
 #postgressql gem
 gem 'pg'
+
+gem 'devise'
