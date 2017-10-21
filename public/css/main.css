@@ -6,8 +6,8 @@
 #conversation-options{
     background-color: #bbb;
     color: #444;
-    padding: 50px;
 }
+
 #conversation-content-video{
     padding-top:30%;
     padding-bottom:30%;
@@ -27,11 +27,8 @@
 .references a{
     color: white !important;
 }
-.user-icon{
+#user-icon{
     background-color: white;
-    background-image: url("../images/userpic_elderly.png");
-    padding: 30px;
-    background-size: contain;
 }
 .user-profile{
     color: white;
@@ -39,5 +36,5 @@
 
 #otheractivities a{
     color: #444;
-    margin: 0;
+    padding: 0px;
 }

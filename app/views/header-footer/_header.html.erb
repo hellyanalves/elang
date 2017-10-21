@@ -15,9 +15,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
+          <li><a href="/selection/selection">Talk</a></li>
           <li><%= link_to "Profile", edit_user_registration_path %></li>
           <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
         <% else %>
+          <li><a href="/index/index#about">About</a></li>
           <li><%= link_to "Sign In", new_user_session_path %></li>
           <li><%= link_to "Sign Up", new_user_registration_path %></li>
         <% end %>
