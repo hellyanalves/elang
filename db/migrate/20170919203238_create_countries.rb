@@ -3,7 +3,6 @@ class CreateCountries < ActiveRecord::Migration
     create_table :countries do |t|
       t.string :name
       t.string :flag
-
       t.timestamps null: false
     end
   end
