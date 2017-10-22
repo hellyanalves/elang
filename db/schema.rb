@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171022040629) do
+ActiveRecord::Schema.define(version: 20171022205748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,16 @@ ActiveRecord::Schema.define(version: 20171022040629) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "user_idioms", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "idiom_id"
+    t.boolean "learn"
+    t.boolean "teach"
+  end
+
+  add_index "user_idioms", ["idiom_id"], name: "index_user_idioms_on_idiom_id", using: :btree
+  add_index "user_idioms", ["user_id"], name: "index_user_idioms_on_user_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.integer  "country_id"
@@ -45,11 +55,14 @@ ActiveRecord::Schema.define(version: 20171022040629) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.date     "birth_date",                          null: false
   end
 
   add_index "users", ["country_id"], name: "index_users_on_country_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "user_idioms", "idioms"
+  add_foreign_key "user_idioms", "users"
   add_foreign_key "users", "countries"
 end
