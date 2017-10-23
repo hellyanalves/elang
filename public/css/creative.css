@@ -51,6 +51,12 @@ p {
   margin-bottom: 20px; 
   font-weight: bold;}
 
+c {
+  font-size: 15px;
+  line-height: 1.0;
+  margin-bottom: 15px; 
+  font-weight: bold;}
+
 .bg-primary {
   background-color: #F05F40 !important; }
 
