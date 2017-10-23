@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171022205748) do
+ActiveRecord::Schema.define(version: 20171023014751) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,10 +30,12 @@ ActiveRecord::Schema.define(version: 20171022205748) do
   end
 
   create_table "user_idioms", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "idiom_id"
-    t.boolean "learn"
-    t.boolean "teach"
+    t.integer  "user_id"
+    t.integer  "idiom_id"
+    t.boolean  "learn"
+    t.boolean  "teach"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "user_idioms", ["idiom_id"], name: "index_user_idioms_on_idiom_id", using: :btree
