@@ -15,3 +15,11 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#user-profile, #conversation-content-video, #conversation-options {
+    height: 400px;
+}
+
+.btn-action {
+    width: 200px;
+}
