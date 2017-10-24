@@ -7,21 +7,37 @@
         <div class="col-md-3" id="user-profile">
             <div class="row">
                 <div class="col-xs-6">
-                    <img id="user-icon" src="../images/userpic_elderly.png" class="img-responsive"/>
+                    <img id="user-icon" src="../images/alice_silva.jpg" class="img-responsive"/>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-s-6">
                     <h3 class="text-justify"><%= current_user.name %></h3>
                 </div>
             </div>
             <div class="row">
                 
                 <h2>Contacts</h2>
-                <p> João Carlos da Silva </p>
-                <p> Gabriel Silva </p>
-                <p> Luísa Santos </p>
+                
+                <ul>
+                    <button class="btn btn-default">
+                            <img src="../images/william_oMaley.jpg" width="25" /> William O'Maley
+                    </button>
+                    
+                    
+                    <button class="btn btn-default">
+                            <img src="../images/katie_johnson.jpg" width="25" /> Katie Johnson   
+                    </button>
+                    
+
+                    <button class="btn btn-default">
+                            <img src="../images/mary_edwards.jpg" width="25" /> Mary Edwards
+                    </button>
+                    
+                    </ul>
                 
             </div>
-            <div class="row small">Icons made by <a href="http://www.freepik.com" title=" Freepik ">Freepik</a> from <a href="https://www.flaticon.com/" title=" Flaticon ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title=" Creative Commons BY 3.0 " target="_blank">CC 3.0 BY</a></div>
+            <!-- ../images/userpic_elderly.png -->
+            <!--<div class="row small">Icons made by <a href="http://www.freepik.com" title=" Freepik ">Freepik</a> from <a href="https://www.flaticon.com/" title=" Flaticon ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title=" Creative Commons BY 3.0 " target="_blank">CC 3.0 BY</a>
+            </div>-->
         </div>
         <div class="col-md-6"id="conversation-content">
             <div class="row" id="conversation-content-video"> <!-- Plano de fundo Skype -->
@@ -33,18 +49,33 @@
         </div>
         
         <div class="col-md-3" id="conversation-options">
-            <h3>Select another activity</h3>
+            <h3>Start another activity</h3>
             <div class="list-group" id="otheractivities">
-                <div class="col-xs-6">
-                    <a class="list-group-item" href="#"> <h3>Themesort </h3>
-                    <img id="user-icon" src="../images/ativtemas.png" class="img-responsive"/>
-                    </a>
-                    <a class="list-group-item" href="#"> <h3>Hangman </h3>
+                
+                    <ul>
+                    <button class="btn btn-default">
+                            <img src="../images/ativtemas.png" width="50" /> Theme Sort
+                    </button>
+                    
+                    
+                    <button class="btn btn-default">
+                            <img src="../images/ativjogoforca.png" width="50" /> Hangman   
+                    </button>
+                    
+
+                    <button class="btn btn-default">
+                            <img src="../images/ativjogodavelha.png" width="50" /> Tic-tac-toe
+                    </button>
+                    
+                    </ul>
+                    <!--<a class="list-group-item" href="#"> <h3>Hangman </h3>
                     <img id="user-icon" src="../images/ativjogoforca.png" class="img-responsive"/>
                     </a>
                     <a class="list-group-item" href="#"> <h3>Tic-tac-toe </h3>
                     <img id="user-icon" src="../images/ativjogodavelha.png" class="img-responsive"/>
                     </a>
+                    -->
+                    
                 </div>
             </div>    
         </div>
