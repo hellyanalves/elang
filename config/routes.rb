@@ -9,8 +9,12 @@ Rails.application.routes.draw do
   get 'index/index'
   get 'login/login'
   get 'selection/selection'
+  get 'selection/users_idioms'
+  
   get 'themesort/themesort'
   get 'main/main'
+  
+  
   
   post '/login/auth' => 'login#auth'
   

@@ -18,7 +18,7 @@ end
 
 country_list.each do |country|
   Country.create( name: country["name"], flag: country["flag"] )
-end
+end 
 
 idiom_list.each do |idiom|
   Idiom.create( name: idiom["name"])
