@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% arr = [
+"Hobbies & Interests",
+"Schooling (course / academic training)",
+"Profession (retired or not)",
+"Important experience(s) in your life",
+"Funny experience(s) in your life",
+"Preference for songs (style, band...), a specific song and reason for choosing this song",
+"Preference for soap operas and reason",
+"Preference for movies (comedy, horror, suspense...), a specific movie and reason for choosing this movie",
+"Opinion on technology today and 50 years ago (facilities)",
+"What is expected of young people today 50 years from now?",
+"City or field preference and reason",
+"Animal preference and reason",
+"Food preference and reason",
+"An important person in your life",
+"Best trips in your life and reason",
+"Best events in your life and reason (weddings, graduation, anniversaries, birthdays...)"
+    ] %>
+
 <head>
     <!--<link href="/css/login/loginstyles.css" rel="stylesheet">-->
     <link href="/css/main.css" rel="stylesheet">
@@ -31,6 +52,10 @@
                 <div class="col-xs-12">
                     Country: United States
                 </div>
+                </div>
+                <div class="col-xs-12">
+                    Link Skype:
+                </div>
             </div>
             
             <!--
@@ -63,7 +88,18 @@
             </div>-->
         </div>
         <div class="col-md-6"id="conversation-content">
-            <div class="row" id="conversation-content-activity"> 
+            <div class="row" id="conversation-content-activity">
+                <h3>Current Activity: Theme Sort</h3>
+                <header class="masthead">
+                  <div class="header-content">
+                    <div class="header-content-inner" style="background-color: white;">
+                      <h1>Theme Sorted: <%= arr.at(rand(0..15)) %></h1>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Resort</a>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="javascript:history.back()">Back</a>
+                    </div>
+                  
+                  </div>
+                </header>
             </div>
         </div>
         
