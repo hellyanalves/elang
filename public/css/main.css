@@ -1,22 +1,19 @@
 #user-profile{
     background-color: #f05f44;
     color: white;
-    padding: 50px;
+    padding-top: 5%;
+    padding-bottom: 35%;
 }
 #conversation-options{
     background-color: #bbb;
     color: #444;
+    padding-top: 5%;
+    padding-bottom: 35%;
 }
 
-#conversation-content-video{
+#conversation-content-activity{
     padding-top:30%;
     padding-bottom:30%;
-    padding-left:5%;
-}
-#conversation-content-activity{
-    background-color: #fff;
-    padding-top:1%;
-    padding-bottom:1%;
     padding-left:5%;
 }
 .references{
@@ -38,6 +35,10 @@
 #otheractivities a{
     color: #444;
     padding: 0px;
+}
+#otheractivities{
+    padding-top: 5%;
+    padding-bottom: 35%;
 }
 
 
