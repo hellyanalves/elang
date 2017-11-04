@@ -11,14 +11,12 @@
 #conversation-content-video{
     padding-top:30%;
     padding-bottom:30%;
-    background-image: url("../images/skype-logo.png");
-    background-size: contain;
     padding-left:5%;
 }
 #conversation-content-activity{
     background-color: #fff;
-    padding-top:15%;
-    padding-bottom:15%;
+    padding-top:1%;
+    padding-bottom:1%;
     padding-left:5%;
 }
 .references{
@@ -29,6 +27,9 @@
 }
 #user-icon{
     background-color: white;
+    width: 80px;
+    height: 90px;
+    
 }
 .user-profile{
     color: white;
