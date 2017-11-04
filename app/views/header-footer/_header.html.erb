@@ -16,8 +16,9 @@
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
           <li><a href="/selection/selection">Talk</a></li>
-          <li><%= link_to "Profile", edit_user_registration_path %></li>
+          <li><%= link_to "Profile", current_user %></li>
           <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+          <li><p>Hello <%= current_user.name%></p></li>
         <% else %>
           <li><a href="/index/index#about">About</a></li>
           <li><%= link_to "Sign In", new_user_session_path %></li>
