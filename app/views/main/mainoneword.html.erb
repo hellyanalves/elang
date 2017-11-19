@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <% arr = [
-"Hobbies & Interests",
-"Schooling (course / academic training)",
-"Profession (retired or not)",
-"Important experience(s) in your life",
-"Funny experience(s) in your life",
-"Preference for songs (style, band...), a specific song and reason for choosing this song",
-"Preference for soap operas and reason",
-"Preference for movies (comedy, horror, suspense...), a specific movie and reason for choosing this movie",
-"Opinion on technology today and 50 years ago (facilities)",
-"What is expected of young people today 50 years from now?",
-"City or field preference and reason",
-"Animal preference and reason",
-"Food preference and reason",
-"An important person in your life",
-"Best trips in your life and reason",
-"Best events in your life and reason (weddings, graduation, anniversaries, birthdays...)"
+"Mother",
+"Father",
+"Teacher",
+"Health",
+"Friends",
+"Heart",
+"technology",
+"Youth",
+"Retirement",
+"Nursing Home",
+"Family",
+"Conversation",
+"Study",
+"Life",
+"Gym",
+"Stories",
+"History"
     ] %>
 
 <head>
@@ -88,12 +89,13 @@
         </div>
         <div class="col-md-6"id="conversation-content">
             <div class="row" id="conversation-content-activity">
-                <h1>Current Activity: Theme Sort</h1>
-                <h3>Discuss about a sorted theme with your connection.</h3>
+                <h1>Current Activity: One Word</h1>
+                <h3>You need to tell your connection what word was sorted and your connection need to explain what 
+                    this means to him/her with one word.</h3>
                 <header class="masthead">
                   <div class="header-content">
                     <div class="header-content-inner" style="background-color: white;">
-                      <h1>Theme Sorted: <%= arr.at(rand(0..15)) %></h1>
+                      <h1>Stuff Sorted: <%= arr.at(rand(0..15)) %></h1>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Resort</a>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="javascript:history.back()">Back</a>
                     </div>
@@ -113,8 +115,8 @@
                     </button>
                     
                     
-                    <button class="btn btn-default btn-action" href="/main/mmainguessing">
-                            <img src="../images/ativguessing.png" width="50"/> Guessing 
+                    <button class="btn btn-default btn-action">
+                            <img src="../images/ativguessing.png" width="50" /> Guessing   
                     </button>
                     
 
@@ -122,22 +124,21 @@
                             <img src="../images/ativoneword.png" width="50" /> One Word
                     </button>
                     -->
+                    
                     <a class="list-group-item" href="/main/main"> 
-                    <img id="user-icon" src="../images/ativtemas.png" width="50" class="img-responsive"/>
+                    <img id="user-icon" src="../images/ativtemas.png" class="img-responsive"/>
                     <h4>Theme Sort </h4>
                     </a>
                     <a class="list-group-item" href="/main/mainguessing"> 
-                    <img id="user-icon" src="../images/ativguessing_s.png" width="50" class="img-responsive"/>
+                    <img id="user-icon" src="../images/ativguessing_s.png" class="img-responsive"/>
                     <h4>Guessing </h4>
                     </a>
                     <a class="list-group-item" href="/main/mainoneword"> 
-                    <img id="user-icon" src="../images/ativoneword_s.png" width="50" class="img-responsive"/>
+                    <img id="user-icon" src="../images/ativoneword_s.png" class="img-responsive"/>
                     <h4>One Word </h4>
                     </a>
                     
                     </ul>
-                    
-                    
                     
                 </div>
             </div>    

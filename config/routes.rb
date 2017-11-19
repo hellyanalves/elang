@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   
   get 'themesort/themesort'
   get 'main/main'
+  get 'main/mainguessing'
+  get 'main/mainoneword'
   
   
   
