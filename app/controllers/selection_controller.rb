@@ -8,4 +8,7 @@ class SelectionController < ApplicationController
     
     def users_idioms
     end
+    
+    def selectionresults
+    end
 end

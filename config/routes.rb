@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'login/login'
   get 'selection/selection'
   get 'selection/users_idioms'
+  get 'selection/selectionresults'
   
   get 'themesort/themesort'
   get 'main/main'
