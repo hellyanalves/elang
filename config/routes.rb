@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'login/login'
   get 'selection/selection'
   get 'selection/users_idioms'
-  get 'selection/selectionresults'
+  post 'selection/selection' => 'selection#searchresults'
   
   get 'themesort/themesort'
   get 'main/main'
@@ -21,7 +21,6 @@ Rails.application.routes.draw do
   
   post '/login/auth' => 'login#auth'
   
-  post '/selection/selection' => 'selection/connect'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

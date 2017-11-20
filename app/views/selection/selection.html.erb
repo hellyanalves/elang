@@ -1,118 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
     <meta charset="utf-8">
     <title>Elang</title>
-    
-    
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <link href="/css/selection.css" rel="stylesheet">
 
   </head>
-  <!--
-  <body>
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>  Now select the language you want want to speak. </h2>
-          </div>
-      </div>
-
-      <div class="row">
-        <%= form_for :idiom, :html => { :method => :post } do |f| %>
-          <div class="form-group">
-            <%= f.label :id %><br/>
-            <%= f.select :id, options_from_collection_for_select(Idiom.all, :id, :name)  %>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary" action="f.submit">
-              Connect!
-            </button>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </body>-->
   <body id="body-content">
-    <div class="modal-body row">
-        <div class="col-md-3" id="user-profile">
-            <div class="row">
-                
-                <h2>My Contacts</h2>
-                
-                  <ul>
-                    <button class="btn btn-default btn-action">
-                            <img src="../images/william_oMaley.jpg" width="25" /> William O'Maley
-                    </button>
-                    
-                    <button class="btn btn-default btn-action">
-                            <img src="../images/katie_johnson.jpg" width="25" /> Katie Johnson   
-                    </button>
-                    
-                    <button class="btn btn-default btn-action">
-                            <img src="../images/mary_edwards.jpg" width="25" /> Mary Edwards
-                    </button>
-                  </ul>
-                    
-                    <a class="button_to" href="/main/main" action="f.submit"> 
-                    <h4>Connect!</h4>
-                    </a>
-                
-            </div>
-            
-        </div>
+    <div class="modal-body">
+      <div class="col-md-3 col-sm-12" id="user-contacts">
+          <div class="row">
+              <h2 class="col-md-12">My Contacts</h2>
+          </div>
+          <%= render partial: 'selection/contact', :locals => {:name => 'Willian OMaley'} %>
+          <%= render partial: 'selection/contact', :locals => {:name => 'Mary Edwards'} %>
+          <%= render partial: 'selection/contact', :locals => {:name => 'Katie Johnson'} %>
+      </div>
 
-      <div class="row">
-        <h2>Search a new contact</h2>
-        <%= form_for :idiom, :html => { :method => :post } do |f| %>
+      <div class="col-md-8 col-sm-12">
+        <h2>Search new contacts</h2>
+        <%= form_for :idiom,:method => :post  do |f| %>
           <div class="form-group">
             <h4>Language</h4>
             <%= f.select :id, options_from_collection_for_select(Idiom.all, :id, :name)  %>
-            <% end %>
-            
-            <a class="button_to" href="/selection/selectionresults" action="f.submit"> 
-              <h4>Search</h4>
-            </a>
-            
-            
+          </div>  
+          <div class="form-group">  
+            <button class="btn btn-default" type="submit">Search</button>
           </div>
-          <h3>Results</h3>
-          <!--
-          <ul>
-            <button class="btn btn-default btn-action">
-              <img src="../images/louise_kinley.jpg" width="50" /> Louise Kinley
-            </button>
-                
-            <button class="btn btn-default btn-action">
-              <img src="../images/claire_bach.jpg" width="50" /> Claire Bach   
-            </button>
-                    
-            <button class="btn btn-default btn-action">
-              <img src="../images/john_weatherstaff.jpg" width="50" /> John Weatherstaff
-            </button>
-          </ul>
-          
-          
-          <a class="button_to" href="/main/main" action="f.submit"> 
-            <h4>Connect!</h4>
-          </a>
-          -->
+        <% end %>  
+        <div id="selection_selectionresults">
+          <%= render partial: 'selection/selectionresults' %>
+        </div>
       </div>
       
     </div>
-        
-    </div> 
+    
   </body>
 
 </html>

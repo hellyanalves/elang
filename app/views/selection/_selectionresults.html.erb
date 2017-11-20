@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<% if @searchresults.count > 0 %>
+  <h3>Results</h3>
+    <% @searchresults.each do |user| %>
+      <%= render partial: 'selection/userintro', :locals => {:user => user} %>
+    <% end %>
+<% end %>
