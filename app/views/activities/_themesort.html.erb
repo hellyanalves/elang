@@ -1,0 +1,36 @@
+<%    @themes = [
+            "Hobbies & Interests",
+            "Schooling (course / academic training)",
+            "Profession (retired or not)",
+            "Important experience(s) in your life",
+            "Funny experience(s) in your life",
+            "Preference for songs (style, band...), a specific song and reason for choosing this song",
+            "Preference for soap operas and reason",
+            "Preference for movies (comedy, horror, suspense...), a specific movie and reason for choosing this movie",
+            "Opinion on technology today and 50 years ago (facilities)",
+            "What is expected of young people today 50 years from now?",
+            "City or field preference and reason",
+            "Animal preference and reason",
+            "Food preference and reason",
+            "An important person in your life",
+            "Best trips in your life and reason",
+            "Best events in your life and reason (weddings, graduation, anniversaries, birthdays...)"
+    ]
+    %>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Themesort</h2>    
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        Discuss about a sorted theme with your connection.
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3><strong>Theme Sorted:</strong> <%= @themes.at(rand(0..@themes.count)) %></h3>
+        <a class="btn btn-default btn-xl js-scroll-trigger" href="#">Resort</a>
+        <a class="btn btn-default btn-xl js-scroll-trigger" href="javascript:history.back()">Back</a>    
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<% 
+    @words = [
+        "Mother",
+        "Father",
+        "Teacher",
+        "Health",
+        "Friends",
+        "Heart",
+        "technology",
+        "Youth",
+        "Retirement",
+        "Nursing Home",
+        "Family",
+        "Conversation",
+        "Study",
+        "Life",
+        "Gym",
+        "Stories",
+        "History"
+    ]
+%>
+<div class="row">
+    <div class="col-md-12">
+        <h2>One Word</h2>    
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        You need to tell your connection what word was sorted and your connection needs to explain what this means to him/her with one word.
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3><strong>Stuff sorted:</strong> <%= @words.at(rand(0..@words.count)) %></h3>
+        <a class="btn btn-default btn-xl js-scroll-trigger" href="#">Resort</a>
+        <a class="btn btn-default btn-xl js-scroll-trigger" href="javascript:history.back()">Back</a>    
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<%
+@guesses = [
+        "Trip",
+        "Dominoes",
+        "Circus",
+        "Spring",
+        "Toast",
+        "Treasure",
+        "Pirate",
+        "Frog",
+        "Eletricity",
+        "Nature",
+        "Outside",
+        "Ski",
+        "Palace",
+        "Deep",
+        "Music",
+        "Song"
+    ]
+%>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Guessing</h2>    
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        Try to explain the stuff sorted to your connection.
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3><strong>Stuff sorted:</strong> <%= @guesses.at(rand(0..@guesses.count)) %></h3>
+        <a class="btn btn-default btn-xl js-scroll-trigger" href="#">Resort</a>
+        <a class="btn btn-default btn-xl js-scroll-trigger" href="javascript:history.back()">Back</a>    
+    </div>
+</div>

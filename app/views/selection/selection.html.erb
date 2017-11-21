@@ -21,7 +21,7 @@
         <h2>Search new contacts</h2>
         <%= form_for :idiom,:method => :post  do |f| %>
           <div class="form-group">
-            <h4>Language</h4>
+            <h4>Language to practice</h4>
             <%= f.select :id, options_from_collection_for_select(Idiom.all, :id, :name)  %>
           </div>  
           <div class="form-group">  

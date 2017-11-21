@@ -12,7 +12,10 @@ Rails.application.routes.draw do
   get 'selection/users_idioms'
   post 'selection/selection' => 'selection#searchresults'
   
-  get 'themesort/themesort'
+  get 'activities/themesort'
+  get 'activities/guessing'
+  get 'activities/oneword'
+  
   get 'main/main'
   get 'main/mainguessing'
   get 'main/mainoneword'

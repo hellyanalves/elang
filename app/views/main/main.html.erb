@@ -1,152 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <% arr = [
-"Hobbies & Interests",
-"Schooling (course / academic training)",
-"Profession (retired or not)",
-"Important experience(s) in your life",
-"Funny experience(s) in your life",
-"Preference for songs (style, band...), a specific song and reason for choosing this song",
-"Preference for soap operas and reason",
-"Preference for movies (comedy, horror, suspense...), a specific movie and reason for choosing this movie",
-"Opinion on technology today and 50 years ago (facilities)",
-"What is expected of young people today 50 years from now?",
-"City or field preference and reason",
-"Animal preference and reason",
-"Food preference and reason",
-"An important person in your life",
-"Best trips in your life and reason",
-"Best events in your life and reason (weddings, graduation, anniversaries, birthdays...)"
-    ] %>
-
 <head>
-    <!--<link href="/css/login/loginstyles.css" rel="stylesheet">-->
     <link href="/css/main.css" rel="stylesheet">
 </head>
-<body id="body-content">
-    <div class="modal-body row">
-        <div class="col-md-3" id="contact-profile">
-            <div class="row">
-                <div class="col-xs-6">
-                    <img id="user-icon" src="../images/william_oMaley.jpg" class="img-responsive"/>
-                </div>
-                <div class="col-s-6">
-                    Current connection:
-                    <h3 class="text-justify">William O'Maley</h3>
-                    <!--<h3 class="text-justify"><%= current_user.name %></h3>-->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    Connection Profile
-                </div>
-                <div class="col-xs-12">
-                    Marital Status: Widower
-                </div>
-                <div class="col-xs-12">
-                    Language: English
-                </div>
-                <div class="col-xs-12">
-                    Hobbies: Snooker, Cards, bowling
-                </div>
-                <div class="col-xs-12">
-                    Country: United States
-                </div>
-                <div class="col-xs-12">
-                    Link Skype:
-                </div>
-            </div>
-            
-            <!--
-            <div class="row">
-                
-                <h2>Contacts</h2>
-                
-                <ul>
-                    <button class="btn btn-default btn-action">
-                            <img src="../images/william_oMaley.jpg" width="25" /> William O'Maley
-                    </button>
-                    
-                    
-                    <button class="btn btn-default btn-action">
-                            <img src="../images/katie_johnson.jpg" width="25" /> Katie Johnson   
-                    </button>
-                    
-
-                    <button class="btn btn-default btn-action">
-                            <img src="../images/mary_edwards.jpg" width="25" /> Mary Edwards
-                    </button>
-                    
-                    </ul>
-                
-            </div>
-            -->
-            
-            <!-- ../images/userpic_elderly.png -->
-            <!--<div class="row small">Icons made by <a href="http://www.freepik.com" title=" Freepik ">Freepik</a> from <a href="https://www.flaticon.com/" title=" Flaticon ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title=" Creative Commons BY 3.0 " target="_blank">CC 3.0 BY</a>
-            </div>-->
-        </div>
-        <div class="col-md-6"id="conversation-content">
-            <div class="row" id="conversation-content-activity">
-                <h1>Current Activity: Theme Sort</h1>
-                <h3>Discuss about a sorted theme with your connection.</h3>
-                <header class="masthead">
-                  <div class="header-content">
-                    <div class="header-content-inner" style="background-color: white;">
-                      <h1>Theme Sorted: <%= arr.at(rand(0..arr.count)) %></h1>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Resort</a>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="javascript:history.back()">Back</a>
-                    </div>
-                  
-                  </div>
-                </header>
+<div class="modal-body">
+    <div class="col-md-3" id="contact-profile">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <h4>Current connection</h4>    
             </div>
         </div>
-        
-        <div class="col-md-3" id="conversation-options">
-            <h3>Start another activity</h3>
-            <div class="list-group" id="otheractivities">
-                
-                    <ul>
-                    <!--<button class="btn btn-default btn-action">
-                            <img src="../images/ativtemas.png" width="50" /> Theme Sort
-                    </button>
-                    
-                    
-                    <button class="btn btn-default btn-action" href="/main/mmainguessing">
-                            <img src="../images/ativguessing.png" width="50"/> Guessing 
-                    </button>
-                    
-
-                    <button class="btn btn-default btn-action">
-                            <img src="../images/ativoneword.png" width="50" /> One Word
-                    </button>
-                    -->
-                    <a class="list-group-item" href="/main/main"> 
-                    <img id="user-icon" src="../images/ativtemas.png" width="50" class="img-responsive"/>
-                    <h4>Theme Sort </h4>
-                    </a>
-                    <a class="list-group-item" href="/main/mainguessing"> 
-                    <img id="user-icon" src="../images/ativguessing_s.png" width="50" class="img-responsive"/>
-                    <h4>Guessing </h4>
-                    </a>
-                    <a class="list-group-item" href="/main/mainoneword"> 
-                    <img id="user-icon" src="../images/ativoneword_s.png" width="50" class="img-responsive"/>
-                    <h4>One Word </h4>
-                    </a>
-                    
-                    </ul>
-                    
-                    
-                    
-                </div>
-            </div>    
-        </div>
-        <!--<div class="row" id="conversation-content-activity">
-            <div class="col-md-12">
-                Current Activity
+        <div class="row">
+            <div class="col-xs-4">
+                <img id="user-icon" src="../images/userpic_elderly.png" class="img-responsive"/>
+            </div>
+            <div class="col-xs-8">
+                <h3><strong>Willian O'Maley</strong></h3>
             </div>
         </div>
-        -->
-    </div> 
-</body>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <h4><strong>Bio:</strong></h4>
+                <h4><strong>Gender:</strong> Male</h4>
+                <h4><strong>Knows:</strong> English</h4>
+                <h4><strong>Learning:</strong></h4>
+                <h4><strong>Skype:</strong></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6" id="conversation-content">
+        <%= render partial: @activity %>
+    </div>
+    <div class="col-md-3" id="conversation-options">
+        <h3>Start another activity</h3>
+        <%= render partial: 'activities/activitysummary', :locals => {:activitytitle => "Themesort", :activityname => "themesort"} %>
+        <%= render partial: 'activities/activitysummary', :locals => {:activitytitle => "Guessing", :activityname => "guessing"} %>
+        <%= render partial: 'activities/activitysummary', :locals => {:activitytitle => "One Word", :activityname => "oneword"} %>
+    </div>
+</div>

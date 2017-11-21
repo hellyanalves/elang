@@ -2,7 +2,7 @@
     background-color: #f05f44;
     color: white;
     padding-top: 5%;
-    padding-bottom: 35%;
+    padding-bottom: 12%;
 }
 #conversation-options{
     background-color: #bbb;
@@ -42,12 +42,12 @@
 }
 
 
-.ativ{
-            width: auto;
-            text-align: center; 
-            background: url('images/ativjogodavelha.png');
-            padding-left: 90px;
-            padding-top: 90px;
-            background-repeat: no;
-            border: none;
-        }
+.activity{
+    margin-top: 15px;
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+.activity a:hover{
+    color: #f05f44;
+}
