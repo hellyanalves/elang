@@ -1,5 +1,6 @@
 class MainController < ApplicationController
     def  main
+        @user=User.find(params[:user_id])
         if (params.has_key?(:activity))
             @activity = "activities/"+params[:activity].to_s()
             @arr = params[:array]

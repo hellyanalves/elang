@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'selection/users_idioms'
   post 'selection/selection' => 'selection#searchresults'
   
+  post 'contact/create' => 'contacts#create'
+  
   get 'activities/themesort'
   get 'activities/guessing'
   get 'activities/oneword'

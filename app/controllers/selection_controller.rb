@@ -1,10 +1,12 @@
 class SelectionController < ApplicationController
     def  selection
+        @user_contacts = Contact.where(:owner_id => current_user.id)
         @searchresults = {}
         @idiom = Idiom.new
     end
     
     def searchresults
+        @user_contacts = Contact.where(:owner_id => current_user.id)
         @searchresults = User.all
         respond_to do |format|
             format.html {render '/selection/selection'}

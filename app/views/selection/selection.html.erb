@@ -12,9 +12,9 @@
           <div class="row">
               <h2 class="col-md-12">My Contacts</h2>
           </div>
-          <%= render partial: 'selection/contact', :locals => {:name => 'Willian OMaley'} %>
-          <%= render partial: 'selection/contact', :locals => {:name => 'Mary Edwards'} %>
-          <%= render partial: 'selection/contact', :locals => {:name => 'Katie Johnson'} %>
+          <% @user_contacts.each do |contact| %>
+            <%= render partial: 'selection/contact', :locals => {:user => User.find(contact.user_id)} %>
+          <% end %>
       </div>
 
       <div class="col-md-8 col-sm-12">
@@ -32,7 +32,6 @@
           <%= render partial: 'selection/selectionresults' %>
         </div>
       </div>
-      
     </div>
     
   </body>

@@ -14,6 +14,22 @@
       <%= f.email_field :email, autofocus: true %>
     </div>
   
+  
+    <div class="form-group">
+      <%= f.label :gender %><br/>
+      <%= f.select :gender, ['Female','Male','Other'] %>
+    </div>
+  
+    <div class="form-group">
+      <%= f.label :bio %> (150 characters)<br/>
+      <%= f.text_area :bio, :maxlength => 150 %>
+    </div>
+    
+    <div class="form-group">
+      <%= f.label :skypeusername %><br/>
+      <%= f.text_field :skypeusername %>
+    </div>
+  
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
     <% end %>

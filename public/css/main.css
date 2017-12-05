@@ -4,11 +4,20 @@
     padding-top: 5%;
     padding-bottom: 12%;
 }
+#contact-profile a:hover{
+    color:white;
+}
 #conversation-options{
     background-color: #bbb;
     color: #444;
     padding-top: 5%;
     padding-bottom: 35%;
+}
+.home_links{
+    color: #444!important;
+}
+.home_links:hover{
+    color: #f05f44!important;
 }
 
 #conversation-content-activity{
@@ -28,9 +37,6 @@
     height: 90px;
     
 }
-.user-profile{
-    color: white;
-}
 
 #otheractivities a{
     color: #444;
@@ -47,7 +53,4 @@
     padding-top: 5px;
     background-color: white;
     border-radius: 5px;
-}
-.activity a:hover{
-    color: #f05f44;
 }

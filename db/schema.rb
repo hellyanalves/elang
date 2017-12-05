@@ -11,10 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171023014751) do
+ActiveRecord::Schema.define(version: 20171204230816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contacts", force: :cascade do |t|
+    t.integer "owner_id"
+    t.integer "user_id"
+  end
 
   create_table "countries", force: :cascade do |t|
     t.string   "name"
@@ -58,6 +63,9 @@ ActiveRecord::Schema.define(version: 20171023014751) do
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
     t.date     "birth_date",                          null: false
+    t.string   "gender"
+    t.text     "bio"
+    t.string   "skypeusername"
   end
 
   add_index "users", ["country_id"], name: "index_users_on_country_id", using: :btree

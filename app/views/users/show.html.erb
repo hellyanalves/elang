@@ -22,8 +22,18 @@
   </div>
   
   <div class="row h4">
-    <strong>Address:</strong>
-    <%= @user.address %>
+    <strong>Gender:</strong>
+    <%= @user.gender %>
+  </div>
+  
+  <div class="row h4">
+    <strong>Bio:</strong>
+    <%= @user.bio %>
+  </div>
+  
+    <div class="row h4">
+    <strong>Skype Username:</strong>
+    <%= @user.skypeusername %>
   </div>
   
   <%= link_to 'Edit', edit_user_registration_path(@user), :class => "btn btn-default btn-lg" %>
