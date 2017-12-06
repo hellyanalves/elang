@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <h2>Select the languages you want to teach</h2>
+    </div>
+    <div class="row">
+        <%= form_for(@user_idiom, url: user_idiom_create_url) do |f| %>
+            <div class="form-group">
+              <%= f.label :idiom_id %><br/>
+              <%= f.select :idiom_id, options_from_collection_for_select(Idiom.all, :id, :name) %>
+            </div>
+            <%= f.hidden_field :user_id, :value => current_user.id %>
+            <%= f.hidden_field :learn, :value =>  false %>
+            <%= f.hidden_field :teach, :value => true %>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" action="f.submit">
+                Add
+              </button>
+            </div>
+        <% end %>
+    </div>
+   <div class="row">
+       <h2>Your idioms</h2>
+   </div>
+   <% @user_idioms.each do |useridiom| %>
+    <div class="row">
+        <div class="col-md-6">
+            <%= Idiom.find(useridiom.idiom_id).name %>
+        </div>
+        <div class="col-md-6">
+            <% if useridiom.learn? %>
+                Learn
+            <% else %>
+                Teach
+            <% end %>
+        </div>
+    </div>
+   <% end %>
+
+</div>

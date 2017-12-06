@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   get 'index/index'
   get 'login/login'
   get 'selection/selection'
-  get 'selection/users_idioms'
-  post 'selection/selection' => 'selection#searchresults'
+  
+  post 'selection/searchresults' => 'selection#searchresults'
   
   post 'contact/create' => 'contacts#create'
   
@@ -22,7 +22,8 @@ Rails.application.routes.draw do
   get 'main/mainguessing'
   get 'main/mainoneword'
   
-  
+  get 'user_idiom/users_idioms'
+  post 'user_idiom/create' => 'user_idiom#create'
   
   post '/login/auth' => 'login#auth'
   
